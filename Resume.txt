@@ -1,0 +1,142 @@
+  devbachani08@gmail.com | +91-9173706507 Ahmedabad, Gujarat, India
+
+EDUCATION
+
+NIRMA UNIVERSITY
+
+B.TECH IN COMPUTER SCIENCE AND ENGINEERING
+
+  2021 - 2025 | Ahmedabad, Gujarat
+
+SHIV ASHISH SCHOOL
+
+CBSE (CLASS XII)
+
+  2021 | Ahmedabad, Gujarat Percentage: 90%
+
+EUROSCHOOL
+
+CBSE (CLASS X)
+
+  2019 | Ahmedabad, Gujarat Percentage: 93%
+
+LINKS
+
+  Github: Dev22603
+
+  LinkedIn: devbachani
+
+  Codeforces: Dev_Bachani CodeChef: dev22603 LeetCode: Dev22603
+
+COURSEWORK
+
+UNDERGRADUATE
+
+-   Data Structures & Algorithms
+
+-   Object Oriented Programming
+
+-   Programming for Scientific Computing
+
+-   Mathematics I, II, III, IV
+
+-   Operating Systems
+
+-   Database Management System
+
+-   Web Technologies
+
+SKILLS
+
+PROGRAMMING
+
+  Languages:
+
+-   C++ • Python • C
+
+-   Java • JavaScript • Node.js
+
+  Technologies:
+
+-   HTML • CSS
+
+-   R-DBMS • SQL
+
+  Tools:
+
+-   Git • GitHub • MySQL
+
+  Frameworks:
+
+-   React.js
+
+ EXPERIENCE
+
+  COMPUTER SOCIETY OF INDIA | EXECUTIVE MEMBER
+
+  Sept 2022 - Present
+
+-   Part of the Organizing team of Cubix’23 event
+
+PROJECTS
+
+YOUTUBE DOWNLOADER
+
+-   Language: Python
+
+-   Libraries used: pytube, CustomTkinter and Tkinter
+
+-   Essential features: URL extraction, resolution options, progress
+      monitoring, and seamless video downloading.
+
+-   All downloaded videos are conveniently saved in the Downloads
+      folder.
+
+-   GitHub
+
+IMAGE PROCESSING TOOL
+
+-   Used libraries like OpenCV, Pillow, Matplotlib, and Tkinter to build
+      a GUI
+
+  application that performs functions of image processing like Gaussian
+  blur, edge detection, colour to gray-scale conversion, and also
+  displays histogram.
+
+-   Language: Python
+
+-   GitHub
+
+E-COMMERCE SITE
+
+-   Built a Front-end E-commerce site for an Electronic store using
+      HTML, CSS and
+
+  Javascript
+
+-   Allows the user to add products to the cart and calculate the total
+      amount to be paid
+
+-   Allows the user to modify the shopping cart
+
+-   GitHub
+
+KEY ACCOMPLISHMENTS
+
+-   Solved more than 500 problems on Codeforces
+
+-   Solved more than 100 DSA problems on LeetCode
+
+-   Max Rating: 1538 on LeetCode
+
+-   2 Stars on CodeChef (Max Rating: 1443)
+
+-   5-star in Python and 5-star in Problem solving on HackerRank
+
+CERTIFICATES
+
+  •Supervised Machine Learning: Regression and Classification
+
+  •Unsupervised Learning, Recommenders, Reinforcement Learning
+
+  •Python Language Course (Aug 2022 - Present)

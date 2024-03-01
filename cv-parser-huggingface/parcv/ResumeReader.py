@@ -6,7 +6,7 @@ import pdfplumber
 
 class ResumeReader:
 
-    def convert_docx_to_txt(self, docx_file,docx_parser):
+    def convert_docx_to_txt(self, docx_file):
         """
             A utility function to convert a Microsoft docx files to raw text.
 
@@ -84,7 +84,7 @@ class ResumeReader:
             # if file.endswith('doc') and docx_parser == "docx2txt":
                 # docx_parser = "tika"
                 # logging.error("doc format not supported by the docx2txt changing back to tika")
-            resume_lines, raw_text = self.convert_docx_to_txt(file,docx_parser)
+            resume_lines, raw_text = self.convert_docx_to_txt(file)
         elif file.endswith('pdf'):
             resume_lines, raw_text = self.convert_pdf_to_txt(file)
         elif file.endswith('txt'):

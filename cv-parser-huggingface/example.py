@@ -250,10 +250,10 @@ print("Accuracy:", accuracy)
 
  
 # Opening JSON file
-with open('output.json') as json_file:
+with open('output.json', "r+") as json_file:
     data = json.load(json_file)
 
-    standardized_output = [];
+    standardized_output = []
 
     for jobs in data["Job History"]:
         new_job_titles = [jobs["Job Title"]]
@@ -266,6 +266,12 @@ with open('output.json') as json_file:
         print("Predictions:", predicted_labels)
         print("Corresponding O*NET-SOC 2019 codes are : ")
         for label in predicted_labels:
-            standardized_output.append(job_category_to_ONET_SOC[label])
+            standardized_output.append(label)
 
     print(standardized_output)
+    data["Standardized Job Titles"] = standardized_output
+    # Reset file pointer to beginning before writing
+    json_file.seek(0)
+    json.dump(data, json_file, indent=4, default=str, ensure_ascii=False)
+    # Truncate remaining content to ensure data consistency
+    json_file.truncate()

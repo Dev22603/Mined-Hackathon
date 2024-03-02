@@ -25,11 +25,17 @@ Utilizing natural language processing techniques, we extract detailed skills and
 2. Navigate to the project directory: `cd ResumeRevealer`
 3. Install dependencies: `pip install -r requirements.txt`
 
-## Usage
 
-### Running the Parser
-1. Ensure you have resumes to parse. Examples are provided in the repository. Adjust the file paths in `example.py` accordingly to use the provided resumes.
-2. Run the parser: `python example.py`
+## Usage
+1. Ensure you have resumes to parse. Examples are provided in the repository. Adjust the file paths in `app.py` accordingly to use the provided resumes.
+2. Add the path to the PDF resume you want to parse in `app.py`:
+   ```python
+   # GIVE ABSOLUTE PATH TO THE RESUME HERE
+   ########################
+   resume_path = 'your_resume.pdf'
+   ########################
+   ```
+3. Run the parser: `python app.py`
 
 ## Features
 
@@ -46,7 +52,7 @@ Utilizing advanced natural language processing techniques, ResumeRevealer extrac
 A machine learning script matches the obtained job titles to a standardized job list from the O-NET database, ensuring consistency and compatibility with industry standards.
 
 ## Acknowledgments
-- Special thanks to the organizers of the Advanced Resume Parsing Challenge for providing the problem statements and inspiration for this project.
-- Thanks to Centre of Excellence in Data Science (Nirma University) for organizing the Mined hackathon.
+- Special thanks to Revelio Labs for their track of Advanced Resume Parsing Challenge for providing the problem statements and inspiration for this project.
+- Thanks to Centre of Excellence in Data Science (Nirma University) for organizing the MINeD hackathon.
 - Special thanks to Praxal Patel from Revelio Labs (the track sponsor) for his help in understanding the statement.
 - Credits to the developers of TensorFlow, Keras, and scikit-learn for their invaluable tools and libraries.

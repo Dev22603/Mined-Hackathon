@@ -3,10 +3,45 @@ import os
 import logging
 import docx
 import pdfplumber
+from bs4 import BeautifulSoup
+
 
 class ResumeReader:
+    
+    def convert_html_to_txt(self,html_file, encoding='latin-1'):
+        """
+        A utility function to convert HTML files to raw text.
 
-    def convert_docx_to_txt(self, docx_file):
+        :param html_file: HTML file to be converted
+        :type html_file: str
+        :param encoding: Encoding of the HTML file (default is utf-8)
+        :type encoding: str
+        :return: The text contents of the HTML file
+        :rtype: str
+        """
+        try:
+            with open(html_file, 'r', encoding=encoding) as f:
+                html_content = f.read()
+
+            # Parse HTML using BeautifulSoup
+            soup = BeautifulSoup(html_content, 'html.parser')
+
+            # Extract text from HTML
+            text = soup.get_text(separator=' ')
+
+            # Clean and normalize text
+            clean_text = re.sub(r'\n+', '\n', text)
+            clean_text = clean_text.replace("\r", "\n").replace("\t", " ")  # Normalize text blob
+            resume_lines = clean_text.splitlines()  # Split text blob into individual lines
+            resume_lines = [re.sub('\s+', ' ', line.strip()) for line in resume_lines if line.strip()]  # Remove empty strings and whitespaces
+            
+            return resume_lines, text
+        except Exception as e:
+            logging.error('Error in HTML file:: ' + str(e))
+            return [], ""
+
+
+    def convert_docx_to_txt(self, docx_file,docx_parser):
         """
             A utility function to convert a Microsoft docx files to raw text.
 
@@ -84,12 +119,14 @@ class ResumeReader:
             # if file.endswith('doc') and docx_parser == "docx2txt":
                 # docx_parser = "tika"
                 # logging.error("doc format not supported by the docx2txt changing back to tika")
-            resume_lines, raw_text = self.convert_docx_to_txt(file)
+            resume_lines, raw_text = self.convert_docx_to_txt(file,docx_parser)
         elif file.endswith('pdf'):
             resume_lines, raw_text = self.convert_pdf_to_txt(file)
         elif file.endswith('txt'):
             with open(file, 'r', encoding='utf-8') as f:
                 resume_lines = f.readlines()
+        elif file.endswith('html'):
+            resume_lines, raw_text = self.convert_html_to_txt(file)
 
         else:
             resume_lines = None

@@ -36,6 +36,30 @@ Utilizing natural language processing techniques, we extract detailed skills and
    ########################
    ```
 3. Run the parser: `python app.py`
+4. The output will be created and stored in `output.json` file having comprehensive details
+    Job Title: The title of the job position.
+    Company: The name of the company where the job was held.
+    Start Date: The start date of the job.
+    End Date: The end date of the job (if available).
+    Education
+    School Name: The name of the educational institution.
+    Field of Study: The field of study or major.
+    Qualification: The qualification or degree obtained.
+    Skills
+    A list of extracted skills and competencies relevant to the candidate's profile.
+
+    Contact Info
+    Email: The candidate's email address.
+    phone1: The candidate's primary phone number.
+    phone2: An additional phone number if available.
+    address: The candidate's address if available.
+    Name
+    The name of the candidate.
+
+    Standardized Job Titles
+    A list of job titles standardized against the O-NET database, ensuring consistency and compatibility with industry standards.
+
+
 
 ## Features
 

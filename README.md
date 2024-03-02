@@ -1,4 +1,7 @@
 # ResumeParser : Advanced Resume Parsing Challenge (by Revelio Labs)
+# The resume validation set is inside Resume Parser folder
+
+
 
 ## Problem Statements
 

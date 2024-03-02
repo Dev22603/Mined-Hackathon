@@ -19,7 +19,12 @@ parser = parcv.Parser(pickle=True, load_pickled=True)
 vectorizer = CountVectorizer()
 
 
-json_output = parser.parse('Sumedh_Nikhil_Shah_Resume.pdf')
+# GIVE ABSOLUTE PATH TO THE RESUME HERE
+########################
+resume_path = 'Sumedh_Nikhil_Shah_Resume.pdf'
+########################
+
+json_output = parser.parse(resume_path)
 print(json_output)
 
 lines = parser.get_resume_lines()
@@ -275,10 +280,200 @@ with open('output.json', "r+") as json_file:
     print(standardized_output)
     data["Standardized Job Titles"] = standardized_output
     # Reset file pointer to beginning before writing
+    
+
+    # To catch skills not caught by the parser
+    if len(data['Skills'])==0:
+        
+        text_data = ''
+        with pdfplumber.open(resume_path) as pdf:
+            for page in pdf.pages:
+                text_data += page.extract_text()
+        skills_list = [
+        "Java",
+        "Python",
+        "C/C++",
+        "JavaScript",
+        "Ruby",
+        "Swift",
+        "Kotlin",
+        "Go",
+        "PHP",
+        "SQL",
+        "HTML/CSS",
+        "React",
+        "Angular",
+        "Vue.js",
+        "Node.js",
+        "RESTful APIs",
+        "Git",
+        "Docker",
+        "Linux",
+        "AWS",
+        "Azure",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Agile Methodologies",
+        "Scrum",
+        "Kubernetes",
+        "Microservices",
+        "Data Structures",
+        "Algorithms",
+        "Object-Oriented Programming",
+        "Functional Programming",
+        "Test-Driven Development (TDD)",
+        "Continuous Integration (CI)",
+        "Continuous Deployment (CD)",
+        "DevOps",
+        "Backend Development",
+        "Frontend Development",
+        "Full-Stack Development",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing (NLP)",
+        "Computer Vision",
+        "Big Data",
+        "Data Mining",
+        "Data Analysis",
+        "Data Visualization",
+        "Database Management",
+        "NoSQL Databases",
+        "Relational Databases",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "SQLite",
+        "Redis",
+        "Elasticsearch",
+        "Apache Kafka",
+        "Hadoop",
+        "Spark",
+        "Scala",
+        "TensorFlow",
+        "PyTorch",
+        "Keras",
+        "OpenCV",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Jupyter Notebook",
+        "GitLab",
+        "Jira",
+        "Confluence",
+        "Trello",
+        "Visual Studio Code",
+        "PyCharm",
+        "IntelliJ IDEA",
+        "Sublime Text",
+        "Eclipse",
+        "NetBeans",
+        "Visual Studio",
+        "Atom",
+        "Bash Scripting",
+        "PowerShell",
+        "Shell Scripting",
+        "REST API",
+        "GraphQL",
+        "OAuth",
+        "JWT",
+        "TCP/IP",
+        "HTTP/HTTPS",
+        "DNS",
+        "SSH",
+        "SSL/TLS",
+        "OAuth",
+        "JWT",
+        "Blockchain",
+        "Smart Contracts",
+        "Solidity",
+        "Ethereum",
+        "Web3.js",
+        "Cryptocurrency",
+        "Cybersecurity",
+        "Penetration Testing",
+        "Ethical Hacking",
+        "Firewalls",
+        "Intrusion Detection Systems",
+        "Security Auditing",
+        "Security Policies",
+        "Vulnerability Assessment",
+        "Security Incident Response",
+        "Security Information and Event Management (SIEM)",
+        "Threat Intelligence",
+        "Identity and Access Management (IAM)",
+        "Encryption",
+        "Network Security",
+        "Application Security",
+        "Cloud Security",
+        "Endpoint Security",
+        "Security Compliance",
+        "Security Architecture",
+        "Secure Coding Practices",
+        "Disaster Recovery Planning",
+        "Business Continuity Planning",
+        "Risk Management",
+        "Compliance Management",
+        "IT Governance",
+        "ITIL",
+        "ISO/IEC 27001",
+        "NIST Cybersecurity Framework",
+        "PCI DSS",
+        "GDPR",
+        "HIPAA",
+        "SOX Compliance",
+        "Agile Methodologies",
+        "Scrum",
+        "Kanban",
+        "Lean Software Development",
+        "Pair Programming",
+        "Agile Testing",
+        "Agile Project Management",
+        "Agile Estimation and Planning",
+        "Agile Retrospectives",
+        "Agile User Stories",
+        "Agile Sprints",
+        "Agile Continuous Integration (CI)",
+        "Agile Continuous Deployment (CD)",
+        "Agile DevOps",
+        "Agile Product Backlog Management",
+        "Agile Sprint Reviews",
+        "Agile Sprint Planning",
+        "Agile Daily Stand-ups",
+        "Agile Scrum Master",
+        "Agile Product Owner",
+        "Agile Team Facilitation",
+        "Agile Coaching",
+        "Agile Leadership",
+        "Agile Transformation",
+        "Agile Metrics and KPIs",
+        "Agile Risk Management",
+        "Agile Stakeholder Engagement",
+        "Agile Change Management",
+        "Agile Release Management",
+        "Agile Tools and Techniques",
+        "Agile Principles and Values",
+        "Agile Manifesto",
+        "Agile Practices",
+        "Agile Culture",
+    ]
+
+        skills_found = []
+        for skill in skills_list:
+            # Escape special characters in the skill name
+            escaped_skill = re.escape(skill)
+            # Use regular expressions to find the skill in the resume text.
+            if re.search(escaped_skill, text_data, flags=re.IGNORECASE):
+                skills_found.append(skill)
+
+        
+        data['Skills'] = skills_found
+
     json_file.seek(0)
     json.dump(data, json_file, indent=4, default=str, ensure_ascii=False)
     # Truncate remaining content to ensure data consistency
     json_file.truncate()
 
 
-    
+

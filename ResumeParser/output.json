@@ -31,7 +31,35 @@
             "Qualification": "Electronics and Telecommunication Engineering"
         }
     ],
-    "Skills": [],
+    "Skills": [
+        "Java",
+        "Python",
+        "Go",
+        "SQL",
+        "Git",
+        "Linux",
+        "AWS",
+        "Azure",
+        "Algorithms",
+        "Machine Learning",
+        "Big Data",
+        "Data Analysis",
+        "Database Management",
+        "Relational Databases",
+        "MongoDB",
+        "MySQL",
+        "Redis",
+        "Hadoop",
+        "Spark",
+        "Scala",
+        "PyTorch",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Seaborn",
+        "Jupyter Notebook",
+        "REST API"
+    ],
     "Name": "SUMEDH SHAH",
     "Contact Info": {
         "Email": "sumedhns@andrew.cmu.edu",
@@ -42,6 +70,6 @@
     "Standardized Job Titles": [
         "Data Scientist",
         "Data Scientist",
-        "Financial Manager"
+        "Database Architect"
     ]
 }

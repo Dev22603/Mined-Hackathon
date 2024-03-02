@@ -9,24 +9,28 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from keras.models import load_model
+import pdfplumber
+import re
 
-model_path = "my_model.h5"
-model = load_model(model_path)
+#model_path = "my_model.h5"
+#model = load_model(model_path)
 
-# parser = parcv.Parser(pickle=True, load_pickled=True)
+parser = parcv.Parser(pickle=True, load_pickled=True)
 vectorizer = CountVectorizer()
 
-# json_output = parser.parse('../../Sumedh_Nikhil_Shah_Resume.pdf')
-# print(json_output)
 
-# lines = parser.get_resume_lines()
-# print(lines)
+json_output = parser.parse('Sumedh_Nikhil_Shah_Resume.pdf')
+print(json_output)
 
-# segments = parser.get_resume_segments()
-# print(segments)
+lines = parser.get_resume_lines()
+print(lines)
 
-# file_name = "output.json"
-# parser.save_as_json(file_name)
+segments = parser.get_resume_segments()
+print(segments)
+
+file_name = "output.json"
+
+parser.save_as_json(file_name)
 
 # importing the module
 import json
@@ -275,3 +279,6 @@ with open('output.json', "r+") as json_file:
     json.dump(data, json_file, indent=4, default=str, ensure_ascii=False)
     # Truncate remaining content to ensure data consistency
     json_file.truncate()
+
+
+    

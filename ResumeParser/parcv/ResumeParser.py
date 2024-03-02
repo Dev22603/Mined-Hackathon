@@ -38,7 +38,7 @@ class ResumeParser:
                 capitalized = all([True if i[0].isupper() else False for i in elem_splitted])
                 if capitalized and elem_splitted and len(elem_splitted) < 4:
                     candidate_skill = ' '.join(elem_splitted)
-                    if self.belongs_to_label(candidate_skill, 'technical skill', labels):
+                    if self.belongs_to_label(candidate_skill,'technical skill', labels):
                         skills.append(candidate_skill)
         self.parsed_cv['Skills'] = skills
 

@@ -1,19 +1,19 @@
 from parcv import parcv
 import tensorflow as tf
-from keras.models import load_model
 from sklearn.feature_extraction.text import CountVectorizer
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-from keras.utils import to_categorical
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from keras.models import load_model
 import pdfplumber
 import re
-
-#model_path = "my_model.h5"
-#model = load_model(model_path)
+import json
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.feature_extraction.text import CountVectorizer
+from keras.utils import to_categorical
 
 parser = parcv.Parser(pickle=True, load_pickled=True)
 vectorizer = CountVectorizer()
@@ -36,10 +36,6 @@ print(segments)
 file_name = "output.json"
 
 parser.save_as_json(file_name)
-
-# importing the module
-import json
-
 
 labeled_data = [
     (["Systems Analyst"], "Computer Systems Analyst"),
@@ -209,17 +205,7 @@ job_category_to_ONET_SOC["Software Developer"] = "15-1252.00"
 job_category_to_ONET_SOC["Database Architect"] = "15-1243.00"
 job_category_to_ONET_SOC["Financial Manager"] = "11-3031.00"
 
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from keras.models import load_model
 
-
-
-from sklearn.feature_extraction.text import CountVectorizer
-from keras.models import Sequential
-from keras.layers import Dense, Dropout
-from keras.utils import to_categorical
 
 job_titles = []
 # Extract features and labels from the labeled data
@@ -255,8 +241,9 @@ model.fit(X_train, y_train, epochs=150, batch_size=32)
 
 # Evaluate the model
 loss, accuracy = model.evaluate(X_test, y_test, verbose=0)
-print("Accuracy:", accuracy)
 
+
+ 
  
 # Opening JSON file
 with open('output.json', "r+") as json_file:

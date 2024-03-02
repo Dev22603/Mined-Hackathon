@@ -91,6 +91,8 @@ labeled_data = [
     (["Data Warehouse Manager"], "Database Architect"),
 
 
+
+    (["sde"],"Software Developer"),
     (["SWE"],"Software Developer"),
     (["Backend Engineer"],"Software Developer"),
     (["Frontend Developer"],"Software Developer"),

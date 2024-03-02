@@ -1,0 +1,37 @@
+{
+    "Job History": [
+        {
+            "Job Title": "Bartender",
+            "Company": "Bartender",
+            "Start Date": "03-2013",
+            "End Date": "03-2014"
+        }
+    ],
+    "Education": [
+        {
+            "School Name": "Columbia University, School of General Studies",
+            "Field of Study": "Psychology",
+            "Qualification": "Bachelor of Arts in Psychology"
+        },
+        {
+            "School Name": "Community College of Atlanta",
+            "Field of Study": "Machine Learning Engineer",
+            "Qualification": "RELEVANT EXPERIENCE"
+        }
+    ],
+    "Skills": [
+        "Go",
+        "Algorithms",
+        "Machine Learning"
+    ],
+    "Name": "PAT HENDRICKS",
+    "Contact Info": {
+        "Email": "prh908@columbia.edu",
+        "phone1": "",
+        "phone2": "212) 111-1111",
+        "address": "PAT HENDRICKS"
+    },
+    "Standardized Job Titles": [
+        "Database Architect"
+    ]
+}

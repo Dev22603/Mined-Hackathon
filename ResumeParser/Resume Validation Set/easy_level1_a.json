@@ -1,0 +1,81 @@
+{
+    "Job History": [
+        {
+            "Job Title": "DataScientist",
+            "Company": "DataScientist",
+            "Start Date": "",
+            "End Date": ""
+        },
+        {
+            "Job Title": "GraduateResearchAssistant",
+            "Company": "MediaCenterofArtandHistoryatColumbiaUniversity",
+            "Start Date": "Mar2020-Dec2020",
+            "End Date": ""
+        },
+        {
+            "Job Title": "DataScienceAnalyst",
+            "Company": "DataScienceAnalyst",
+            "Start Date": "Mar2020-Dec2020",
+            "End Date": ""
+        },
+        {
+            "Job Title": "AnalyticsEngine",
+            "Company": "AnalyticsEngine",
+            "Start Date": "",
+            "End Date": ""
+        },
+        {
+            "Job Title": "DataScientistIntern",
+            "Company": "DataScientistIntern",
+            "Start Date": "May2020-Aug2020",
+            "End Date": ""
+        },
+        {
+            "Job Title": "ResearchIntern",
+            "Company": "SamsungR&DInstitute",
+            "Start Date": "Jan2019-May2019",
+            "End Date": ""
+        }
+    ],
+    "Education": [
+        {
+            "School Name": "ColumbiaUniversity",
+            "Field of Study": "MasterofScienceinDataScience",
+            "Qualification": "MasterofScienceinDataScience"
+        },
+        {
+            "School Name": "NirmaUniversity",
+            "Field of Study": "BachelorofTechnologyinComputerEngineering",
+            "Qualification": "BachelorofTechnologyinComputerEngineering"
+        }
+    ],
+    "Skills": [
+        "ProgrammingLanguages",
+        "Python",
+        "SQL",
+        "ToolsandTechnologies",
+        "Scikit",
+        "NumPy",
+        "Statsmodels",
+        "OpenCV",
+        "GoogleBigQuery",
+        "MongoDB",
+        "GitHub",
+        "LaTeX"
+    ],
+    "Name": "Prasham Sheth",
+    "Contact Info": {
+        "Email": "p.d.sheth@columbia.edu",
+        "phone1": "+1(516)707-1668",
+        "phone2": "",
+        "address": ""
+    },
+    "Standardized Job Titles": [
+        "Data Scientist",
+        "Software Developer",
+        "Data Scientist",
+        "Data Scientist",
+        "Software Developer",
+        "Software Developer"
+    ]
+}

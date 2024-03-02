@@ -21,7 +21,7 @@ vectorizer = CountVectorizer()
 
 # GIVE ABSOLUTE PATH TO THE RESUME HERE
 ########################
-resume_path = '/Users/vatsal/Desktop/untitled folder/Mined-Hackathon/ResumeParser/Resume Validation Set/level1_c_jpeg_resume.pdf'
+resume_path = '/Users/vatsal/Desktop/untitled folder/Mined-Hackathon/Resume Validation Set/easy_level1b.pdf'
 ########################
 
 json_output = parser.parse(resume_path)

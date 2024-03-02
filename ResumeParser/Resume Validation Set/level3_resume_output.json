@@ -1,0 +1,34 @@
+{
+    "Job History": [
+        {
+            "Job Title": "Business Development Intern",
+            "Company": "NBC Universal",
+            "Start Date": "03-2018",
+            "End Date": "03-2019"
+        }
+    ],
+    "Education": [
+        {
+            "School Name": "Columbia University, School of General Studies",
+            "Field of Study": "Political Science",
+            "Qualification": "Bachelor of Arts in Political Science"
+        }
+    ],
+    "Skills": [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Microsoft Word",
+        "Powerpoint"
+    ],
+    "Name": "BRENDAN WEAVER",
+    "Contact Info": {
+        "Email": "bdw102@columbia.edu",
+        "phone1": "",
+        "phone2": "",
+        "address": "BRENDAN WEAVER"
+    },
+    "Standardized Job Titles": [
+        "Business Intelligence Analyst"
+    ]
+}

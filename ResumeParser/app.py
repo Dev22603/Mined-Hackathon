@@ -21,7 +21,7 @@ vectorizer = CountVectorizer()
 
 # GIVE ABSOLUTE PATH TO THE RESUME HERE
 ########################
-resume_path = 'Sumedh_Nikhil_Shah_Resume.pdf'
+resume_path = '/Users/vatsal/Desktop/untitled folder/Mined-Hackathon/ResumeParser/Resume Validation Set/level1_c_jpeg_resume.pdf'
 ########################
 
 json_output = parser.parse(resume_path)
@@ -446,6 +446,9 @@ with open('output.json', "r+") as json_file:
         "Agile Manifesto",
         "Agile Practices",
         "Agile Culture",
+        "Microsoft Word",
+        "Powerpoint",
+        "Power Bi"
     ]
 
         skills_found = []

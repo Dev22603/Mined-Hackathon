@@ -1,0 +1,56 @@
+{
+    "Job History": [
+        {
+            "Job Title": "Data Scientist",
+            "Company": "Revelio Labs",
+            "Start Date": "ul2021",
+            "End Date": ""
+        },
+        {
+            "Job Title": "Marketing Data Scientist",
+            "Company": "ML Group",
+            "Start Date": "Oct2020-Dec2020",
+            "End Date": ""
+        },
+        {
+            "Job Title": "Data Analyst I Technical Consultant",
+            "Company": "Wellness Space India",
+            "Start Date": "01-2019",
+            "End Date": "06-2019"
+        }
+    ],
+    "Education": [
+        {
+            "School Name": "New York University, Center For Data Science",
+            "Field of Study": "Master of Science",
+            "Qualification": "Master of Science in Data Science"
+        },
+        {
+            "School Name": "Institute of Technology, Nirma University",
+            "Field of Study": "Computer Engineering",
+            "Qualification": "Bachelors of Technology in Computer Engineering"
+        }
+    ],
+    "Skills": [
+        "Tools",
+        "Technologies",
+        "Scikit",
+        "Tensorflow",
+        "NumPy",
+        "Matplotlib",
+        "Plotly",
+        "AWS"
+    ],
+    "Name": "Praxal Patel",
+    "Contact Info": {
+        "Email": "praxxals@gmail.com",
+        "phone1": "516) 707-1006",
+        "phone2": "",
+        "address": ""
+    },
+    "Standardized Job Titles": [
+        "Data Scientist",
+        "Data Scientist",
+        "Business Intelligence Analyst"
+    ]
+}

@@ -8,8 +8,9 @@ Develop a comprehensive resume parser, "ResumeRevealer," capable of extracting d
 ### Standardization Challenge:
 Enhance the "ResumeRevealer" to standardize different job titles and occupations against the O-NET database, ensuring a consistent taxonomy across parsed resumes.
 
-### Skill Extraction Challenge:
-Implement an advanced feature in "ResumeRevealer" that mines detailed skills and competencies from project descriptions and position roles within the resume, highlighting the candidate's specific abilities and expertise. Abstractive skill extraction is a bonus.
+### Skill Extraction
+Utilizing natural language processing techniques, we extract detailed skills and competencies from resumes. In addition to parsing, the system also employs heuristic NLP techniques such as using regular expressions (regexes) to capture skills mentioned in the resumes.
+
 
 ## Installation and Setup
 
